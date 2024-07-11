@@ -2,35 +2,20 @@ import logo from './logo.svg';
 import './App.css';
 import Card from './components/Card';
 
-function App(props) {
-  let cards = [
-    {
-      id: 1,
-      text: "card 1",
-    },
-    {
-      id: 2,
-      text: "card 2",
-    },
-    {
-      id: 3,
-      text: "card 3",
-    }
-  ]
+function App({seconds}) {
+  const second = seconds.toString();
+  const character = second.split('');
+
+  
   return (
     <div className='cardGeneral'>
       <div className='container'>
         <div className='row'>
-          <div>
-            <Card />
-          </div>
-          <div>
-            {cards.map(item => {
-              return <div className='col-4'>
-                <Card x={props.seconds} />
+            {character.map((item, index) => {
+              return <div className='col-4' key={index}>
+                <Card character={item} />
               </div>
             })}
-          </div>
         </div>
       </div>
     </div>

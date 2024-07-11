@@ -40,10 +40,10 @@
 .cardGeneral{
   background-color: #282c34;
   flex-wrap: wrap;
-  margin: 10px;
+  margin: 14px;
   
 }
 
 .cardIndividual{
-  margin: 10px;
+  margin: 50px;
 }
