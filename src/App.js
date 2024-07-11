@@ -13,14 +13,14 @@ function App({ seconds }) {
   }
   return (
     <div className='cardGeneral'>
-      
+
       <div className='container'>
-      <div>
-          <Icon />
-      </div>
         <div className='row'>
+          <div className='col'>
+            <Icon />
+          </div>
           {character.map((item, index) => {
-            return <div className='col-2' key={index}>
+            return <div className='col' key={index}>
               <Card character={item} />
             </div>
           })}
