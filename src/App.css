@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+.cardGeneral{
+  background-color: #282c34;
+  flex-wrap: wrap;
+  margin: 10px;
+  
+}
+
+.cardIndividual{
+  margin: 10px;
+}
